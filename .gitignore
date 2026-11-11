@@ -1,0 +1,5 @@
+# tasteskill build state, Chrome profiles and check output (local only)
+.taste-skill/
+shots/
+node_modules/
+.DS_Store

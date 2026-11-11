@@ -1,0 +1,2358 @@
+{
+ "id": "tandro-can",
+ "name": "Tandro 16 oz can",
+ "label": "A 16 oz can of Tandro energy drink",
+ "units": "m",
+ "angle": -30,
+ "camera": {
+  "elev": 12
+ },
+ "turn": {
+  "mode": "sway",
+  "amp": 20,
+  "period": 24
+ },
+ "materials": {
+  "body": {
+   "kind": "paint",
+   "color": "accent",
+   "finish": "gloss"
+  },
+  "tab": {
+   "kind": "paint",
+   "color": "accent",
+   "finish": "gloss"
+  },
+  "ink": {
+   "kind": "paint",
+   "color": "#141516",
+   "finish": "satin"
+  },
+  "score": {
+   "kind": "metal",
+   "color": "#7d8185"
+  }
+ },
+ "colors": [
+  {
+   "id": "cherry",
+   "name": "Black cherry",
+   "accent": "#a3172f"
+  },
+  {
+   "id": "lime",
+   "name": "Lime",
+   "accent": "#6fae2a"
+  },
+  {
+   "id": "blueraz",
+   "name": "Blue raspberry",
+   "accent": "#1f62c4"
+  },
+  {
+   "id": "mango",
+   "name": "Mango",
+   "accent": "#e2560c"
+  }
+ ],
+ "views": {
+  "row": {
+   "from": "side",
+   "angle": -5,
+   "elev": 7
+  },
+  "pack": {
+   "from": "three-quarter",
+   "angle": -28,
+   "elev": 32
+  },
+  "detail-lid": {
+   "part": [
+    "lid",
+    "tab",
+    "rivet",
+    "mouth",
+    "seam"
+   ],
+   "angle": -36,
+   "elev": 64,
+   "margin": 1.2,
+   "cover": 3.1
+  }
+ },
+ "scenes": {
+  "range": {
+   "label": "Four 16 oz cans of Tandro in a row: black cherry, lime, blue raspberry and mango",
+   "materials": {
+    "body": {
+     "kind": "paint",
+     "color": "#a3172f",
+     "finish": "gloss"
+    },
+    "tab": {
+     "kind": "paint",
+     "color": "#a3172f",
+     "finish": "gloss"
+    }
+   },
+   "parts": [
+    {
+     "name": "lime foot",
+     "type": "torus",
+     "at": [
+      0.088,
+      0.0016,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0246,
+     "r": 0.0016,
+     "mat": "alloy"
+    },
+    {
+     "name": "lime base",
+     "type": "tube",
+     "from": [
+      0.088,
+      0.0016,
+      0.0
+     ],
+     "to": [
+      0.088,
+      0.0115,
+      0.0
+     ],
+     "r": 0.0262,
+     "r2": 0.03415,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "lime band",
+     "type": "cylinder",
+     "at": [
+      0.088,
+      0.0205,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "lime body",
+     "type": "cylinder",
+     "at": [
+      0.088,
+      0.0805,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": {
+      "kind": "paint",
+      "color": "#6fae2a",
+      "finish": "gloss"
+     }
+    },
+    {
+     "name": "lime neck",
+     "type": "tube",
+     "from": [
+      0.088,
+      0.1315,
+      0.0
+     ],
+     "to": [
+      0.088,
+      0.1522,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "lime seam",
+     "type": "torus",
+     "at": [
+      0.088,
+      0.1553,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "lime lid",
+     "type": "cylinder",
+     "at": [
+      0.088,
+      0.1536,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "lime tab",
+     "type": "ellipsoid",
+     "at": [
+      0.0948,
+      0.155,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": {
+      "kind": "paint",
+      "color": "#6fae2a",
+      "finish": "gloss"
+     }
+    },
+    {
+     "name": "lime rivet",
+     "type": "cylinder",
+     "at": [
+      0.088,
+      0.1551,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "lime mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.0772,
+      0.1545,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "blueraz foot",
+     "type": "torus",
+     "at": [
+      0.176,
+      0.0016,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0246,
+     "r": 0.0016,
+     "mat": "alloy"
+    },
+    {
+     "name": "blueraz base",
+     "type": "tube",
+     "from": [
+      0.176,
+      0.0016,
+      0.0
+     ],
+     "to": [
+      0.176,
+      0.0115,
+      0.0
+     ],
+     "r": 0.0262,
+     "r2": 0.03415,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "blueraz band",
+     "type": "cylinder",
+     "at": [
+      0.176,
+      0.0205,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "blueraz body",
+     "type": "cylinder",
+     "at": [
+      0.176,
+      0.0805,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": {
+      "kind": "paint",
+      "color": "#1f62c4",
+      "finish": "gloss"
+     }
+    },
+    {
+     "name": "blueraz neck",
+     "type": "tube",
+     "from": [
+      0.176,
+      0.1315,
+      0.0
+     ],
+     "to": [
+      0.176,
+      0.1522,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "blueraz seam",
+     "type": "torus",
+     "at": [
+      0.176,
+      0.1553,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "blueraz lid",
+     "type": "cylinder",
+     "at": [
+      0.176,
+      0.1536,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "blueraz tab",
+     "type": "ellipsoid",
+     "at": [
+      0.1828,
+      0.155,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": {
+      "kind": "paint",
+      "color": "#1f62c4",
+      "finish": "gloss"
+     }
+    },
+    {
+     "name": "blueraz rivet",
+     "type": "cylinder",
+     "at": [
+      0.176,
+      0.1551,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "blueraz mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.1652,
+      0.1545,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "mango foot",
+     "type": "torus",
+     "at": [
+      0.264,
+      0.0016,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0246,
+     "r": 0.0016,
+     "mat": "alloy"
+    },
+    {
+     "name": "mango base",
+     "type": "tube",
+     "from": [
+      0.264,
+      0.0016,
+      0.0
+     ],
+     "to": [
+      0.264,
+      0.0115,
+      0.0
+     ],
+     "r": 0.0262,
+     "r2": 0.03415,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "mango band",
+     "type": "cylinder",
+     "at": [
+      0.264,
+      0.0205,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "mango body",
+     "type": "cylinder",
+     "at": [
+      0.264,
+      0.0805,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": {
+      "kind": "paint",
+      "color": "#e2560c",
+      "finish": "gloss"
+     }
+    },
+    {
+     "name": "mango neck",
+     "type": "tube",
+     "from": [
+      0.264,
+      0.1315,
+      0.0
+     ],
+     "to": [
+      0.264,
+      0.1522,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "mango seam",
+     "type": "torus",
+     "at": [
+      0.264,
+      0.1553,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "mango lid",
+     "type": "cylinder",
+     "at": [
+      0.264,
+      0.1536,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "mango tab",
+     "type": "ellipsoid",
+     "at": [
+      0.2708,
+      0.155,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": {
+      "kind": "paint",
+      "color": "#e2560c",
+      "finish": "gloss"
+     }
+    },
+    {
+     "name": "mango rivet",
+     "type": "cylinder",
+     "at": [
+      0.264,
+      0.1551,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "mango mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.2532,
+      0.1545,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    }
+   ]
+  },
+  "desk": {
+   "label": "A can of Tandro on a study desk beside two books and a sheet of notes",
+   "props": [
+    {
+     "prop": "desk",
+     "at": [
+      0.03,
+      -0.03,
+      0.01
+     ],
+     "size": [
+      0.38,
+      0.03,
+      0.25
+     ]
+    },
+    {
+     "prop": "book",
+     "at": [
+      -0.105,
+      0,
+      -0.045
+     ],
+     "yaw": -12,
+     "count": 2,
+     "colors": [
+      "#2b3a4a",
+      "#c9b48a"
+     ]
+    },
+    {
+     "prop": "sheet",
+     "at": [
+      0.095,
+      0,
+      0.055
+     ],
+     "yaw": 14,
+     "size": [
+      0.21,
+      0.002,
+      0.148
+     ]
+    }
+   ]
+  },
+  "gym": {
+   "label": "A can of Tandro on a rubber gym floor beside a pair of dumbbells",
+   "parts": [
+    {
+     "name": "floor",
+     "type": "box",
+     "at": [
+      0.12,
+      -0.007,
+      0.01
+     ],
+     "size": [
+      0.44,
+      0.014,
+      0.3
+     ],
+     "round": 0.003,
+     "mat": {
+      "kind": "rubber",
+      "color": "#1d1e20"
+     }
+    },
+    {
+     "name": "bell A head 1",
+     "type": "cylinder",
+     "at": [
+      0.15,
+      0.048,
+      -0.085
+     ],
+     "axis": "z",
+     "r": 0.048,
+     "h": 0.05,
+     "round": 0.006,
+     "mat": {
+      "kind": "rubber",
+      "color": "#232426"
+     }
+    },
+    {
+     "name": "bell A head 2",
+     "type": "cylinder",
+     "at": [
+      0.15,
+      0.048,
+      0.085
+     ],
+     "axis": "z",
+     "r": 0.048,
+     "h": 0.05,
+     "round": 0.006,
+     "mat": {
+      "kind": "rubber",
+      "color": "#232426"
+     }
+    },
+    {
+     "name": "bell A grip",
+     "type": "tube",
+     "from": [
+      0.15,
+      0.048,
+      -0.06
+     ],
+     "to": [
+      0.15,
+      0.048,
+      0.06
+     ],
+     "r": 0.0155,
+     "mat": "chrome"
+    },
+    {
+     "name": "bell B head 1",
+     "type": "cylinder",
+     "at": [
+      0.285,
+      0.048,
+      -0.07
+     ],
+     "axis": "z",
+     "r": 0.048,
+     "h": 0.05,
+     "round": 0.006,
+     "mat": {
+      "kind": "rubber",
+      "color": "#232426"
+     }
+    },
+    {
+     "name": "bell B head 2",
+     "type": "cylinder",
+     "at": [
+      0.285,
+      0.048,
+      0.1
+     ],
+     "axis": "z",
+     "r": 0.048,
+     "h": 0.05,
+     "round": 0.006,
+     "mat": {
+      "kind": "rubber",
+      "color": "#232426"
+     }
+    },
+    {
+     "name": "bell B grip",
+     "type": "tube",
+     "from": [
+      0.285,
+      0.048,
+      -0.045
+     ],
+     "to": [
+      0.285,
+      0.048,
+      0.075
+     ],
+     "r": 0.0155,
+     "mat": "chrome"
+    }
+   ]
+  },
+  "twelve": {
+   "label": "A 12-pack of Tandro: twelve 16 oz cans in a kraft tray",
+   "hide": [
+    "foot",
+    "base",
+    "band",
+    "body",
+    "neck",
+    "seam",
+    "lid",
+    "tab",
+    "rivet",
+    "mouth"
+   ],
+   "props": [
+    {
+     "prop": "tray",
+     "at": [
+      0,
+      0,
+      0
+     ],
+     "size": [
+      0.29,
+      0.042,
+      0.218
+     ],
+     "parcels": 0,
+     "mats": {
+      "plastic": {
+       "kind": "paint",
+       "color": "#a9845a",
+       "finish": "matte"
+      }
+     }
+    }
+   ],
+   "parts": [
+    {
+     "name": "pack00 band",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.015,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack00 body",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.075,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack00 neck",
+     "type": "tube",
+     "from": [
+      -0.1038,
+      0.126,
+      -0.0692
+     ],
+     "to": [
+      -0.1038,
+      0.1467,
+      -0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack00 seam",
+     "type": "torus",
+     "at": [
+      -0.1038,
+      0.1498,
+      -0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack00 lid",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.1481,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack00 tab",
+     "type": "ellipsoid",
+     "at": [
+      -0.097,
+      0.1495,
+      -0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack00 rivet",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.1496,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack00 mouth",
+     "type": "ellipsoid",
+     "at": [
+      -0.1146,
+      0.149,
+      -0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack01 band",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.015,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack01 body",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.075,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack01 neck",
+     "type": "tube",
+     "from": [
+      -0.1038,
+      0.126,
+      0.0
+     ],
+     "to": [
+      -0.1038,
+      0.1467,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack01 seam",
+     "type": "torus",
+     "at": [
+      -0.1038,
+      0.1498,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack01 lid",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.1481,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack01 tab",
+     "type": "ellipsoid",
+     "at": [
+      -0.097,
+      0.1495,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack01 rivet",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.1496,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack01 mouth",
+     "type": "ellipsoid",
+     "at": [
+      -0.1146,
+      0.149,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack02 band",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.015,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack02 body",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.075,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack02 neck",
+     "type": "tube",
+     "from": [
+      -0.1038,
+      0.126,
+      0.0692
+     ],
+     "to": [
+      -0.1038,
+      0.1467,
+      0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack02 seam",
+     "type": "torus",
+     "at": [
+      -0.1038,
+      0.1498,
+      0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack02 lid",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.1481,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack02 tab",
+     "type": "ellipsoid",
+     "at": [
+      -0.097,
+      0.1495,
+      0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack02 rivet",
+     "type": "cylinder",
+     "at": [
+      -0.1038,
+      0.1496,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack02 mouth",
+     "type": "ellipsoid",
+     "at": [
+      -0.1146,
+      0.149,
+      0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack10 band",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.015,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack10 body",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.075,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack10 neck",
+     "type": "tube",
+     "from": [
+      -0.0346,
+      0.126,
+      -0.0692
+     ],
+     "to": [
+      -0.0346,
+      0.1467,
+      -0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack10 seam",
+     "type": "torus",
+     "at": [
+      -0.0346,
+      0.1498,
+      -0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack10 lid",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.1481,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack10 tab",
+     "type": "ellipsoid",
+     "at": [
+      -0.0278,
+      0.1495,
+      -0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack10 rivet",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.1496,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack10 mouth",
+     "type": "ellipsoid",
+     "at": [
+      -0.0454,
+      0.149,
+      -0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack11 band",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.015,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack11 body",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.075,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack11 neck",
+     "type": "tube",
+     "from": [
+      -0.0346,
+      0.126,
+      0.0
+     ],
+     "to": [
+      -0.0346,
+      0.1467,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack11 seam",
+     "type": "torus",
+     "at": [
+      -0.0346,
+      0.1498,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack11 lid",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.1481,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack11 tab",
+     "type": "ellipsoid",
+     "at": [
+      -0.0278,
+      0.1495,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack11 rivet",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.1496,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack11 mouth",
+     "type": "ellipsoid",
+     "at": [
+      -0.0454,
+      0.149,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack12 band",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.015,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack12 body",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.075,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack12 neck",
+     "type": "tube",
+     "from": [
+      -0.0346,
+      0.126,
+      0.0692
+     ],
+     "to": [
+      -0.0346,
+      0.1467,
+      0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack12 seam",
+     "type": "torus",
+     "at": [
+      -0.0346,
+      0.1498,
+      0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack12 lid",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.1481,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack12 tab",
+     "type": "ellipsoid",
+     "at": [
+      -0.0278,
+      0.1495,
+      0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack12 rivet",
+     "type": "cylinder",
+     "at": [
+      -0.0346,
+      0.1496,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack12 mouth",
+     "type": "ellipsoid",
+     "at": [
+      -0.0454,
+      0.149,
+      0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack20 band",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.015,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack20 body",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.075,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack20 neck",
+     "type": "tube",
+     "from": [
+      0.0346,
+      0.126,
+      -0.0692
+     ],
+     "to": [
+      0.0346,
+      0.1467,
+      -0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack20 seam",
+     "type": "torus",
+     "at": [
+      0.0346,
+      0.1498,
+      -0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack20 lid",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.1481,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack20 tab",
+     "type": "ellipsoid",
+     "at": [
+      0.0414,
+      0.1495,
+      -0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack20 rivet",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.1496,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack20 mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.0238,
+      0.149,
+      -0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack21 band",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.015,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack21 body",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.075,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack21 neck",
+     "type": "tube",
+     "from": [
+      0.0346,
+      0.126,
+      0.0
+     ],
+     "to": [
+      0.0346,
+      0.1467,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack21 seam",
+     "type": "torus",
+     "at": [
+      0.0346,
+      0.1498,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack21 lid",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.1481,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack21 tab",
+     "type": "ellipsoid",
+     "at": [
+      0.0414,
+      0.1495,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack21 rivet",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.1496,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack21 mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.0238,
+      0.149,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack22 band",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.015,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack22 body",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.075,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack22 neck",
+     "type": "tube",
+     "from": [
+      0.0346,
+      0.126,
+      0.0692
+     ],
+     "to": [
+      0.0346,
+      0.1467,
+      0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack22 seam",
+     "type": "torus",
+     "at": [
+      0.0346,
+      0.1498,
+      0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack22 lid",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.1481,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack22 tab",
+     "type": "ellipsoid",
+     "at": [
+      0.0414,
+      0.1495,
+      0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack22 rivet",
+     "type": "cylinder",
+     "at": [
+      0.0346,
+      0.1496,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack22 mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.0238,
+      0.149,
+      0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack30 band",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.015,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack30 body",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.075,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack30 neck",
+     "type": "tube",
+     "from": [
+      0.1038,
+      0.126,
+      -0.0692
+     ],
+     "to": [
+      0.1038,
+      0.1467,
+      -0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack30 seam",
+     "type": "torus",
+     "at": [
+      0.1038,
+      0.1498,
+      -0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack30 lid",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.1481,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack30 tab",
+     "type": "ellipsoid",
+     "at": [
+      0.1106,
+      0.1495,
+      -0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack30 rivet",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.1496,
+      -0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack30 mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.093,
+      0.149,
+      -0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack31 band",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.015,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack31 body",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.075,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack31 neck",
+     "type": "tube",
+     "from": [
+      0.1038,
+      0.126,
+      0.0
+     ],
+     "to": [
+      0.1038,
+      0.1467,
+      0.0
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack31 seam",
+     "type": "torus",
+     "at": [
+      0.1038,
+      0.1498,
+      0.0
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack31 lid",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.1481,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack31 tab",
+     "type": "ellipsoid",
+     "at": [
+      0.1106,
+      0.1495,
+      0.0
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack31 rivet",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.1496,
+      0.0
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack31 mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.093,
+      0.149,
+      0.0
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    },
+    {
+     "name": "pack32 band",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.015,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.018,
+     "round": 0.0003,
+     "mat": "ink"
+    },
+    {
+     "name": "pack32 body",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.075,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.03415,
+     "h": 0.102,
+     "round": 0.0003,
+     "mat": "body"
+    },
+    {
+     "name": "pack32 neck",
+     "type": "tube",
+     "from": [
+      0.1038,
+      0.126,
+      0.0692
+     ],
+     "to": [
+      0.1038,
+      0.1467,
+      0.0692
+     ],
+     "r": 0.03415,
+     "r2": 0.0283,
+     "cap": "flat",
+     "round": 0.0006,
+     "mat": "ink"
+    },
+    {
+     "name": "pack32 seam",
+     "type": "torus",
+     "at": [
+      0.1038,
+      0.1498,
+      0.0692
+     ],
+     "axis": "y",
+     "R": 0.0274,
+     "r": 0.0019,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack32 lid",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.1481,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0262,
+     "h": 0.0016,
+     "round": 0.0004,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack32 tab",
+     "type": "ellipsoid",
+     "at": [
+      0.1106,
+      0.1495,
+      0.0692
+     ],
+     "size": [
+      0.0225,
+      0.0014,
+      0.0132
+     ],
+     "mat": "tab"
+    },
+    {
+     "name": "pack32 rivet",
+     "type": "cylinder",
+     "at": [
+      0.1038,
+      0.1496,
+      0.0692
+     ],
+     "axis": "y",
+     "r": 0.0027,
+     "h": 0.0012,
+     "mat": "alloy"
+    },
+    {
+     "name": "pack32 mouth",
+     "type": "ellipsoid",
+     "at": [
+      0.093,
+      0.149,
+      0.0692
+     ],
+     "size": [
+      0.015,
+      0.0006,
+      0.0125
+     ],
+     "mat": "score"
+    }
+   ]
+  }
+ },
+ "supports": [
+  "three-quarter",
+  "row",
+  "pack",
+  "detail-lid"
+ ],
+ "make": {
+  "variants": [
+   "three-quarter",
+   "row+range",
+   "three-quarter+desk",
+   "three-quarter+gym",
+   "pack+twelve",
+   "detail-lid"
+  ],
+  "grounds": [
+   "light"
+  ],
+  "px": 1100
+ },
+ "parts": [
+  {
+   "name": "foot",
+   "type": "torus",
+   "at": [
+    0.0,
+    0.0016,
+    0.0
+   ],
+   "axis": "y",
+   "R": 0.0246,
+   "r": 0.0016,
+   "mat": "alloy"
+  },
+  {
+   "name": "base",
+   "type": "tube",
+   "from": [
+    0.0,
+    0.0016,
+    0.0
+   ],
+   "to": [
+    0.0,
+    0.0115,
+    0.0
+   ],
+   "r": 0.0262,
+   "r2": 0.03415,
+   "cap": "flat",
+   "round": 0.0006,
+   "mat": "ink"
+  },
+  {
+   "name": "band",
+   "type": "cylinder",
+   "at": [
+    0.0,
+    0.0205,
+    0.0
+   ],
+   "axis": "y",
+   "r": 0.03415,
+   "h": 0.018,
+   "round": 0.0003,
+   "mat": "ink"
+  },
+  {
+   "name": "body",
+   "type": "cylinder",
+   "at": [
+    0.0,
+    0.0805,
+    0.0
+   ],
+   "axis": "y",
+   "r": 0.03415,
+   "h": 0.102,
+   "round": 0.0003,
+   "mat": "body"
+  },
+  {
+   "name": "neck",
+   "type": "tube",
+   "from": [
+    0.0,
+    0.1315,
+    0.0
+   ],
+   "to": [
+    0.0,
+    0.1522,
+    0.0
+   ],
+   "r": 0.03415,
+   "r2": 0.0283,
+   "cap": "flat",
+   "round": 0.0006,
+   "mat": "ink"
+  },
+  {
+   "name": "seam",
+   "type": "torus",
+   "at": [
+    0.0,
+    0.1553,
+    0.0
+   ],
+   "axis": "y",
+   "R": 0.0274,
+   "r": 0.0019,
+   "mat": "alloy"
+  },
+  {
+   "name": "lid",
+   "type": "cylinder",
+   "at": [
+    0.0,
+    0.1536,
+    0.0
+   ],
+   "axis": "y",
+   "r": 0.0262,
+   "h": 0.0016,
+   "round": 0.0004,
+   "mat": "alloy"
+  },
+  {
+   "name": "tab",
+   "type": "ellipsoid",
+   "at": [
+    0.0068,
+    0.155,
+    0.0
+   ],
+   "size": [
+    0.0225,
+    0.0014,
+    0.0132
+   ],
+   "mat": "tab"
+  },
+  {
+   "name": "rivet",
+   "type": "cylinder",
+   "at": [
+    0.0,
+    0.1551,
+    0.0
+   ],
+   "axis": "y",
+   "r": 0.0027,
+   "h": 0.0012,
+   "mat": "alloy"
+  },
+  {
+   "name": "mouth",
+   "type": "ellipsoid",
+   "at": [
+    -0.0108,
+    0.1545,
+    0.0
+   ],
+   "size": [
+    0.015,
+    0.0006,
+    0.0125
+   ],
+   "mat": "score"
+  }
+ ]
+}

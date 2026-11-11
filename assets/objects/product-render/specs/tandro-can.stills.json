@@ -1,0 +1,286 @@
+{
+ "id": "tandro-can",
+ "made": "2026-11-11T17:16:40.482Z",
+ "px": 1100,
+ "grounds": [
+  "dark"
+ ],
+ "colors": [
+  "cherry",
+  "lime",
+  "blueraz",
+  "mango"
+ ],
+ "variants": {
+  "three-quarter": {
+   "view": "three-quarter",
+   "scene": null,
+   "off": false,
+   "grounds": [
+    "light"
+   ],
+   "stills": {
+    "light": {
+     "cherry": {
+      "file": "stills/tandro-can-three-quarter-cherry.webp",
+      "half": "stills/tandro-can-three-quarter-cherry-half.webp",
+      "w": 492,
+      "h": 1133
+     },
+     "lime": {
+      "file": "stills/tandro-can-three-quarter-lime.webp",
+      "half": "stills/tandro-can-three-quarter-lime-half.webp",
+      "w": 492,
+      "h": 1133
+     },
+     "blueraz": {
+      "file": "stills/tandro-can-three-quarter-blueraz.webp",
+      "half": "stills/tandro-can-three-quarter-blueraz-half.webp",
+      "w": 492,
+      "h": 1133
+     },
+     "mango": {
+      "file": "stills/tandro-can-three-quarter-mango.webp",
+      "half": "stills/tandro-can-three-quarter-mango-half.webp",
+      "w": 492,
+      "h": 1133
+     }
+    }
+   },
+   "box": [
+    0.0122,
+    0.0053,
+    0.9614,
+    0.9806
+   ],
+   "px": 1100
+  },
+  "row-range": {
+   "view": "row",
+   "scene": "range",
+   "off": false,
+   "grounds": [
+    "light"
+   ],
+   "stills": {
+    "light": {
+     "cherry": {
+      "file": "stills/tandro-can-row-range-cherry.webp",
+      "half": "stills/tandro-can-row-range-cherry-half.webp",
+      "w": 2109,
+      "h": 1091
+     },
+     "lime": {
+      "file": "stills/tandro-can-row-range-lime.webp",
+      "half": "stills/tandro-can-row-range-lime-half.webp",
+      "w": 2109,
+      "h": 1091
+     },
+     "blueraz": {
+      "file": "stills/tandro-can-row-range-blueraz.webp",
+      "half": "stills/tandro-can-row-range-blueraz-half.webp",
+      "w": 2109,
+      "h": 1091
+     },
+     "mango": {
+      "file": "stills/tandro-can-row-range-mango.webp",
+      "half": "stills/tandro-can-row-range-mango-half.webp",
+      "w": 2109,
+      "h": 1091
+     }
+    }
+   },
+   "box": [
+    0.0028,
+    0.0055,
+    0.9559,
+    0.923
+   ],
+   "px": 2000
+  },
+  "three-quarter-desk": {
+   "view": "three-quarter",
+   "scene": "desk",
+   "off": false,
+   "grounds": [
+    "light"
+   ],
+   "stills": {
+    "light": {
+     "cherry": {
+      "file": "stills/tandro-can-three-quarter-desk-cherry.webp",
+      "half": "stills/tandro-can-three-quarter-desk-cherry-half.webp",
+      "w": 1136,
+      "h": 603
+     },
+     "lime": {
+      "file": "stills/tandro-can-three-quarter-desk-lime.webp",
+      "half": "stills/tandro-can-three-quarter-desk-lime-half.webp",
+      "w": 1136,
+      "h": 603
+     },
+     "blueraz": {
+      "file": "stills/tandro-can-three-quarter-desk-blueraz.webp",
+      "half": "stills/tandro-can-three-quarter-desk-blueraz-half.webp",
+      "w": 1136,
+      "h": 603
+     },
+     "mango": {
+      "file": "stills/tandro-can-three-quarter-desk-mango.webp",
+      "half": "stills/tandro-can-three-quarter-desk-mango-half.webp",
+      "w": 1136,
+      "h": 603
+     }
+    }
+   },
+   "box": [
+    0.0053,
+    0.01,
+    0.9674,
+    0.9884
+   ],
+   "px": 1100
+  },
+  "three-quarter-gym": {
+   "view": "three-quarter",
+   "scene": "gym",
+   "off": false,
+   "grounds": [
+    "light"
+   ],
+   "stills": {
+    "light": {
+     "cherry": {
+      "file": "stills/tandro-can-three-quarter-gym-cherry.webp",
+      "half": "stills/tandro-can-three-quarter-gym-cherry-half.webp",
+      "w": 1141,
+      "h": 522
+     },
+     "lime": {
+      "file": "stills/tandro-can-three-quarter-gym-lime.webp",
+      "half": "stills/tandro-can-three-quarter-gym-lime-half.webp",
+      "w": 1141,
+      "h": 522
+     },
+     "blueraz": {
+      "file": "stills/tandro-can-three-quarter-gym-blueraz.webp",
+      "half": "stills/tandro-can-three-quarter-gym-blueraz-half.webp",
+      "w": 1141,
+      "h": 522
+     },
+     "mango": {
+      "file": "stills/tandro-can-three-quarter-gym-mango.webp",
+      "half": "stills/tandro-can-three-quarter-gym-mango-half.webp",
+      "w": 1141,
+      "h": 522
+     }
+    }
+   },
+   "box": [
+    0.0053,
+    0.0115,
+    0.9684,
+    0.9885
+   ],
+   "px": 1100
+  },
+  "pack-twelve": {
+   "view": "pack",
+   "scene": "twelve",
+   "off": false,
+   "grounds": [
+    "light"
+   ],
+   "stills": {
+    "light": {
+     "cherry": {
+      "file": "stills/tandro-can-pack-twelve-cherry.webp",
+      "half": "stills/tandro-can-pack-twelve-cherry-half.webp",
+      "w": 1132,
+      "h": 934
+     },
+     "lime": {
+      "file": "stills/tandro-can-pack-twelve-lime.webp",
+      "half": "stills/tandro-can-pack-twelve-lime-half.webp",
+      "w": 1132,
+      "h": 934
+     },
+     "blueraz": {
+      "file": "stills/tandro-can-pack-twelve-blueraz.webp",
+      "half": "stills/tandro-can-pack-twelve-blueraz-half.webp",
+      "w": 1132,
+      "h": 934
+     },
+     "mango": {
+      "file": "stills/tandro-can-pack-twelve-mango.webp",
+      "half": "stills/tandro-can-pack-twelve-mango-half.webp",
+      "w": 1132,
+      "h": 934
+     }
+    }
+   },
+   "box": [
+    0.0053,
+    0.0064,
+    0.9814,
+    0.9647
+   ],
+   "px": 1100
+  },
+  "detail-lid": {
+   "view": "detail-lid",
+   "scene": null,
+   "off": false,
+   "grounds": [
+    "dark"
+   ],
+   "stills": {
+    "dark": {
+     "cherry": {
+      "file": "stills/tandro-can-detail-lid-cherry-dark.webp",
+      "half": "stills/tandro-can-detail-lid-cherry-dark-half.webp",
+      "w": 1063,
+      "h": 1705
+     },
+     "lime": {
+      "file": "stills/tandro-can-detail-lid-lime-dark.webp",
+      "half": "stills/tandro-can-detail-lid-lime-dark-half.webp",
+      "w": 1063,
+      "h": 1705
+     },
+     "blueraz": {
+      "file": "stills/tandro-can-detail-lid-blueraz-dark.webp",
+      "half": "stills/tandro-can-detail-lid-blueraz-dark-half.webp",
+      "w": 1063,
+      "h": 1705
+     },
+     "mango": {
+      "file": "stills/tandro-can-detail-lid-mango-dark.webp",
+      "half": "stills/tandro-can-detail-lid-mango-dark-half.webp",
+      "w": 1063,
+      "h": 1705
+     }
+    }
+   },
+   "box": [
+    0.0056,
+    0.2545,
+    0.9944,
+    1
+   ],
+   "focus": [
+    0.0689,
+    0.2584,
+    0.9311,
+    0.7416
+   ],
+   "cut": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "px": 1100
+  }
+ }
+}

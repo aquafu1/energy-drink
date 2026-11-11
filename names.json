@@ -1,0 +1,17 @@
+{
+  "name": "Tandro",
+  "trade": "energy drink",
+  "coined": true,
+  "searched": true,
+  "date": "2026-11-11",
+  "queries": [
+    { "query": "\"Tandro\" energy drink", "result": "no energy drink, drink brand or product named Tandro in the first results; results were general energy-drink pages (Tiger, Tenzing, Monster)" },
+    { "query": "\"Tandro\" brand beverage", "result": "no beverage brand named Tandro; nearest names were Treo, Tudor Drinks and Sanzo, all different" },
+    { "query": "tandro.com", "result": "no page for tandro.com itself; only unrelated look-alike domains (torande.com, tandas-ec.com) and a GitHub user named tandr" }
+  ],
+  "rejected": [
+    { "name": "Rivvo", "why": "one letter from Revo, a real energy drink sold in Ukraine" },
+    { "name": "Kadeo", "why": "close to Kadeya, a listed beverage company; dropped to stay clear of it" }
+  ],
+  "verdict": "Tandro: no business in the drinks trade and no famous person of that exact name in the first 10 results"
+}
