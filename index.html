@@ -51,22 +51,34 @@
   #flavors .mo-pc__visual > img { object-fit: contain; }
   /* the lid close-up takes what the head row leaves and runs on to the section's foot, so the can's body leaves
      the picture at the band's own edge, not at a line inside it */
-  #can .can-lid { margin-top: var(--s-7); margin-bottom: calc(0px - var(--padb) - var(--bar)); }
+  #can .can-lid { margin-top: var(--s-7); }
+  /* the hero's render frame keeps the kit's 7% overhang at the top only, so the cans and their floor shadow end
+     above the hero's content line (24px over the fold) */
+  #hero-cans { bottom: 0; }
+  /* pinned-chapters at rest (tablet, phone, reduced motion): its rows run past one screen, so the section takes two */
+  main > #flavors[data-moment]:not(.is-live) { min-height: calc(2 * 100vh); min-height: calc(2 * 100svh); }
+  @media (min-width: 640px) { #flavors:not(.is-live) .mo-pc__visual > img { aspect-ratio: 1 / 1; max-height: 34svh; } }
   #order .pack-frame { height: 600px; }
   .nobr { white-space: nowrap; }
   .flavor-pick { border: 0; margin: 0; padding: 0; min-width: 0; }
   .flavor-pick legend { padding: 0; margin-bottom: var(--s-2); }
   .flavor-pick__row { display: flex; flex-wrap: wrap; gap: var(--s-3); }
+  /* the radio is the swatch's visible box (its border), so the focus ring lands on what you see */
   .swatch { position: relative; display: inline-flex; align-items: center; gap: var(--s-2); min-height: 44px; padding: 0 var(--s-4) 0 var(--s-3);
             border: 1px solid var(--line-strong); border-radius: var(--r-btn); font: 500 var(--t-small)/1 var(--font-text); color: var(--ink);
             cursor: pointer; transition: border-color var(--m-in, 150ms) var(--ease); }
-  .swatch:hover { border-color: var(--ink); }
-  .swatch input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; }
+  .swatch:hover, .swatch:has(input:checked) { border-color: var(--ink); }
+  .swatch:has(input:checked) { box-shadow: inset 0 0 0 1px var(--ink); }
+  .swatch input { appearance: none; -webkit-appearance: none; position: absolute; inset: -1px; width: auto; height: auto; margin: 0;
+                  border: 0; border-radius: var(--r-btn); background: transparent; cursor: pointer; }
   .swatch i { width: 16px; height: 16px; border-radius: 50%; background: var(--c); box-shadow: inset 0 0 0 1px rgb(0 0 0 / .18); }
-  .swatch:has(input:checked) { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
-  .swatch:has(input:focus-visible) { outline: 2px solid var(--action); outline-offset: 2px; }
   @media (max-width: 1023px) { #order .pack-frame { height: 420px; } }
-  @media (max-width: 639px) { #can .can-lid { min-height: 260px; } #order .pack-frame { height: 300px; } }
+  @media (max-width: 639px) {
+    #can .can-lid { min-height: 260px; }
+    main > #flavors[data-moment]:not(.is-live) { min-height: calc(2 * 100lvh); }
+    #flavors:not(.is-live) .mo-pc__visual > img { max-height: 33svh; }
+    #order .pack-frame { height: 100%; min-height: 420px; }
+  }
 </style>
 </head>
 <body>
@@ -119,29 +131,30 @@
   <section class="section" id="flavors" style="--h: 2" data-moment="pinned-chapters" aria-labelledby="flavors-h">
     <div class="wrap mo-pc__grid">
       <div class="mo-pc__text">
-        <h2 id="flavors-h">The four flavors</h2>
+        <h2 id="flavors-h">Energy drink in four flavors</h2>
         <ol class="mo-pc__steps">
           <li class="mo-pc__step">
-            <h3>Black cherry</h3>
+            <h3>Black cherry energy drink</h3>
             <p>Dark cherry with a sour edge at the end. The red can.</p>
             <figure class="mo-pc__visual"><img src="assets/objects/product-render/specs/stills/tandro-can-three-quarter-cherry.webp" srcset="assets/objects/product-render/specs/stills/tandro-can-three-quarter-cherry-half.webp 246w, assets/objects/product-render/specs/stills/tandro-can-three-quarter-cherry.webp 492w" sizes="(min-width: 1024px) 220px, 120px" width="492" height="1133" alt="A Tandro black cherry can, red with a black neck and base" data-colour="cherry" loading="lazy" decoding="async"></figure>
           </li>
           <li class="mo-pc__step">
-            <h3>Lime</h3>
+            <h3>Lime energy drink</h3>
             <p>Sharp lime, more sour than sweet. The green can.</p>
             <figure class="mo-pc__visual"><img src="assets/objects/product-render/specs/stills/tandro-can-three-quarter-lime.webp" srcset="assets/objects/product-render/specs/stills/tandro-can-three-quarter-lime-half.webp 246w, assets/objects/product-render/specs/stills/tandro-can-three-quarter-lime.webp 492w" sizes="(min-width: 1024px) 220px, 120px" width="492" height="1133" alt="A Tandro lime can, green with a black neck and base" data-colour="lime" loading="lazy" decoding="async"></figure>
           </li>
           <li class="mo-pc__step">
-            <h3>Blue raspberry</h3>
+            <h3>Blue raspberry energy drink</h3>
             <p>The candy-store flavor, sweet first and tart after. The blue can.</p>
             <figure class="mo-pc__visual"><img src="assets/objects/product-render/specs/stills/tandro-can-three-quarter-blueraz.webp" srcset="assets/objects/product-render/specs/stills/tandro-can-three-quarter-blueraz-half.webp 246w, assets/objects/product-render/specs/stills/tandro-can-three-quarter-blueraz.webp 492w" sizes="(min-width: 1024px) 220px, 120px" width="492" height="1133" alt="A Tandro blue raspberry can, blue with a black neck and base" data-colour="blueraz" loading="lazy" decoding="async"></figure>
           </li>
           <li class="mo-pc__step">
-            <h3>Mango</h3>
+            <h3>Mango energy drink</h3>
             <p>Ripe mango, the sweetest of the four. The orange can.</p>
             <figure class="mo-pc__visual"><img src="assets/objects/product-render/specs/stills/tandro-can-three-quarter-mango.webp" srcset="assets/objects/product-render/specs/stills/tandro-can-three-quarter-mango-half.webp 246w, assets/objects/product-render/specs/stills/tandro-can-three-quarter-mango.webp 492w" sizes="(min-width: 1024px) 220px, 120px" width="492" height="1133" alt="A Tandro mango can, orange with a black neck and base" data-colour="mango" loading="lazy" decoding="async"></figure>
           </li>
         </ol>
+        <p><a class="link" href="#order">Pick a flavor for your 12-pack</a></p>
       </div>
       <div class="mo-pc__visuals frame"></div>
     </div>
@@ -150,7 +163,7 @@
   <section class="section" id="uses" aria-labelledby="uses-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="uses-h">For the library and the weight room</h2>
+        <h2 id="uses-h">A drink for the library and the weight room</h2>
         <p>A can beside the textbooks at 11 p.m., or on the gym floor between sets.</p>
       </div>
       <div class="grid fill">
@@ -168,11 +181,11 @@
     <div class="wrap">
       <div class="grid grid--top">
         <div class="section-head span-6">
-          <h2 id="can-h">The can</h2>
+          <h2 id="can-h">The 16 oz can</h2>
           <p>A third more than a 12 oz soda can, and the pull tab takes the color of the flavor.</p>
         </div>
         <ul class="rows rows--spec span-6 start-7">
-          <li><span class="rows__name">Volume</span><span class="rows__value">16 oz (473 ml)</span></li>
+          <li><span class="rows__name">In milliliters</span><span class="rows__value">473 ml</span></li>
           <li><span class="rows__name">In a 12-pack</span><span class="rows__value">192 oz (5.7 liters)</span></li>
           <li><span class="rows__name">Not recommended for</span><p>Children, people who are pregnant or nursing, and anyone sensitive to caffeine.</p></li>
         </ul>
@@ -183,7 +196,7 @@
     </div>
   </section>
 
-  <section class="section" id="order" aria-labelledby="order-h">
+  <section class="section g2m" id="order" aria-labelledby="order-h">
     <div class="wrap grid grid--top">
       <div class="span-5">
         <div class="section-head">
@@ -196,10 +209,10 @@
           <fieldset class="field field--full flavor-pick">
             <legend>Flavor</legend>
             <div class="flavor-pick__row">
-              <label class="swatch"><input type="radio" name="flavor" value="cherry" data-product-swatch="#pack"><i style="--c:#a3172f" aria-hidden="true"></i>Black cherry</label>
-              <label class="swatch"><input type="radio" name="flavor" value="lime" data-product-swatch="#pack"><i style="--c:#6fae2a" aria-hidden="true"></i>Lime</label>
-              <label class="swatch"><input type="radio" name="flavor" value="blueraz" data-product-swatch="#pack" checked><i style="--c:#1f62c4" aria-hidden="true"></i>Blue raspberry</label>
-              <label class="swatch"><input type="radio" name="flavor" value="mango" data-product-swatch="#pack"><i style="--c:#e2560c" aria-hidden="true"></i>Mango</label>
+              <label class="swatch"><input type="radio" name="flavor" value="cherry" data-product-swatch="#pack" aria-label="Black cherry"><i style="--c:#a3172f" aria-hidden="true"></i>Black cherry</label>
+              <label class="swatch"><input type="radio" name="flavor" value="lime" data-product-swatch="#pack" aria-label="Lime"><i style="--c:#6fae2a" aria-hidden="true"></i>Lime</label>
+              <label class="swatch"><input type="radio" name="flavor" value="blueraz" data-product-swatch="#pack" aria-label="Blue raspberry" checked><i style="--c:#1f62c4" aria-hidden="true"></i>Blue raspberry</label>
+              <label class="swatch"><input type="radio" name="flavor" value="mango" data-product-swatch="#pack" aria-label="Mango"><i style="--c:#e2560c" aria-hidden="true"></i>Mango</label>
             </div>
           </fieldset>
           <div class="field"><label for="f-packs">Packs</label>
@@ -233,6 +246,14 @@
           <a class="nav__logo" href="#top"><span class="mark" data-mark="ring" aria-hidden="true"></span>Tandro</a>
           <p class="footer__lede">Energy drink in 16 oz cans, in four flavors.</p>
         </div>
+        <form class="form span-4 start-5" action="mailto:hello@tandro.example?subject=Newsletter" method="post" enctype="text/plain" data-endpoint="" novalidate>
+          <p class="t-small">Tandro news, by email.</p>
+          <div class="field field--full"><label for="f-news">Email</label>
+            <input id="f-news" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="f-news-err">
+            <p class="field__error" id="f-news-err" hidden>Write an email address with an @ in it.</p></div>
+          <div class="btn-row"><button class="btn btn--secondary" type="submit">Subscribe</button></div>
+          <p class="form__status" role="status" data-form-status></p>
+        </form>
         <div class="span-2 start-9 footer__col"><h3>Tandro</h3><ul><li><a href="#flavors">Flavors</a></li><li><a href="#uses">Uses</a></li><li><a href="#can">Can</a></li></ul></div>
         <div class="span-2 start-11 footer__col"><h3>Contact</h3><ul><li><a href="mailto:hello@tandro.example">Email us</a></li></ul></div>
       </div>
